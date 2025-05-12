@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechRobotics Lab</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <img src="" alt="TechRobotics Lab" id="navbar-logo" class="me-2" height="40">
+                <span id="navbar-title" class="d-none d-md-inline"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nav-links">
+                    <!-- Navigation links will be populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center justify-content-center position-relative">
+        <div class="floating-particles"></div>
+        <div class="container text-center">
+            <h1 class="display-2 fw-bold text-white mb-3" data-aos="fade-up" id="hero-tagline"></h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200" id="mission-statement"></p>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="btn btn-primary btn-lg glow-button" id="hero-cta" title="Learn more about our lab">
+                    <span id="hero-cta-text"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">About the Professor</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="professor-image-container">
+                        <img src="" id="professor-image" alt="Professor" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <h3 class="mb-3" id="professor-name"></h3>
+                    <p class="text-muted mb-3" id="professor-title"></p>
+                    <div class="mb-4" id="professor-bio"></div>
+                    <div class="quote-box mb-4">
+                        <i class="bi bi-quote fs-1 text-primary"></i>
+                        <p class="lead fst-italic mb-0" id="professor-quote"></p>
+                    </div>
+                    <h4 class="mb-3">Teaching Philosophy</h4>
+                    <p id="professor-philosophy"></p>
+                    <div class="mt-4">
+                        <h5 class="mb-3">Achievements</h5>
+                        <ul class="achievement-list" id="professor-achievements">
+                            <!-- Achievements will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Courses & Workshops</h2>
+            <div class="row g-4" id="courses-container">
+                <!-- Course cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bots Section -->
+    <section id="bots" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Meet the Bots 🤖</h2>
+            <div class="row g-4" id="bots-container">
+                <!-- Bot cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Tech Stack Explorer 🧰</h2>
+            
+            <ul class="nav nav-pills mb-4 justify-content-center" id="tech-stack-tabs" role="tablist">
+                <!-- Tech stack category tabs will be populated by JavaScript -->
+            </ul>
+            
+            <div class="tab-content" id="tech-stack-content">
+                <!-- Tech stack category content will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4" data-aos="fade-up">Join the Club</h2>
+                    <div class="glass-card p-4 p-md-5" data-aos="fade-up">
+                        <div class="mb-4">
+                            <h3 class="mb-3">Why join?</h3>
+                            <ul class="text-start join-list" id="why-join-list">
+                                <!-- Why join points will be populated by JavaScript -->
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="mb-3">What you'll learn</h3>
+                            <ul class="text-start join-list" id="what-you-learn-list">
+                                <!-- What you'll learn points will be populated by JavaScript -->
+                            </ul>
+                        </div>
+                        <p class="lead mb-4" id="welcome-message"></p>
+                        <a href="#" class="btn btn-primary btn-lg glow-button mt-3" id="join-cta" title="Join the club">
+                            <span id="join-cta-text"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="glass-card p-4" data-aos="fade-right">
+                        <h3 class="mb-4">Get in Touch</h3>
+                        <div class="mb-3">
+                            <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                            <span id="contact-email"></span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                            <span id="contact-phone"></span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                            <span id="contact-address"></span>
+                        </div>
+                        <h4 class="mb-3">Follow Us</h4>
+                        <div class="social-icons" id="social-icons">
+                            <!-- Social media icons will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="glass-card p-4">
+                        <h3 class="mb-4">Send a Message</h3>
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" title="Inquiry Type">
+                                    <option selected disabled>I'm interested in...</option>
+                                    <option>Taking a course</option>
+                                    <option>Joining the club</option>
+                                    <option>Workshop information</option>
+                                    <option>Other inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-darker text-center">
+        <div class="container">
+            <p class="mb-0 text-muted">© <span id="current-year"></span> TechRobotics Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
