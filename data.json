@@ -2,7 +2,7 @@
   "siteInfo": {
     "title": "TechRobotics Lab",
     "tagline": "Explore the Future. Build with Us.",
-    "logo": "/assets/images/logo.png",
+    "logo": "assets/images/logo.png",
     "missionStatement": "Empowering the next generation of innovators through hands-on robotics education and collaborative technology exploration."
   },
   "navigation": [
@@ -15,7 +15,7 @@
     { "name": "Contact", "link": "#contact" }
   ],
   "hero": {
-    "backgroundImage": "/assets/images/hero-bg.jpg",
+    "backgroundImage": "assets/images/hero-bg.jpg",
     "ctaButton": {
       "text": "Join the Adventure",
       "link": "#join"
@@ -23,7 +23,7 @@
   },
   "about": {
     "professorName": "Dr. Alex Morgan",
-    "profileImage": "/assets/images/professor.jpg",
+    "profileImage": "assets/images/professor.jpg",
     "title": "Professor of Robotics & AI",
     "biography": "With over 15 years of experience in robotics engineering and artificial intelligence, Dr. Morgan combines academic expertise with real-world application. Previously a lead engineer at SpaceTech Industries, Alex now dedicates time to inspiring the next generation of tech innovators.",
     "philosophy": "I believe in learning by doing. Theory is important, but nothing compares to the experience of building something with your own hands and watching it come to life.",
@@ -39,7 +39,7 @@
       "id": 1,
       "title": "Introduction to Robotics",
       "description": "Perfect for beginners, this course covers the fundamentals of robot design, basic electronics, and simple programming concepts.",
-      "image": "/assets/images/workshops/1.jpeg",
+      "image": "assets/images/workshops/1.jpeg",
       "duration": "8 weeks",
       "level": "Beginner"
     },
@@ -47,7 +47,7 @@
       "id": 2,
       "title": "Advanced Sensors & Control",
       "description": "Dive deep into sensor integration, feedback systems, and autonomous navigation algorithms.",
-      "image": "/assets/images/workshops/2.jpeg",
+      "image": "assets/images/workshops/2.jpeg",
       "duration": "10 weeks",
       "level": "Intermediate"
     },
@@ -55,7 +55,7 @@
       "id": 3,
       "title": "AI for Robotics",
       "description": "Learn to implement machine learning algorithms that enable robots to learn from their environment and make decisions.",
-      "image": "/assets/images/workshops/3.jpeg",
+      "image": "assets/images/workshops/3.jpeg",
       "duration": "12 weeks",
       "level": "Advanced"
     },
@@ -63,7 +63,7 @@
       "id": 4,
       "title": "Competitive Robot Building",
       "description": "Design, build, and program robots to compete in challenges like maze navigation, sumo battles, and object retrieval.",
-      "image": "/assets/images/workshops/4.jpeg",
+      "image": "assets/images/workshops/4.jpeg",
       "duration": "6 weeks",
       "level": "All Levels"
     },
@@ -71,7 +71,7 @@
       "id": 5,
       "title": "Robotics for Sustainable Solutions",
       "description": "Create robots that address real-world environmental and social challenges.",
-      "image": "/assets/images/workshops/5.jpeg",
+      "image": "assets/images/workshops/5.jpeg",
       "duration": "8 weeks",
       "level": "Intermediate"
     },
@@ -79,7 +79,7 @@
       "id": 6,
       "title": "DIY Home Automation",
       "description": "Build smart home systems and devices that make everyday life easier and more efficient.",
-      "image": "/assets/images/workshops/6.jpeg",
+      "image": "assets/images/workshops/6.jpeg",
       "duration": "6 weeks",
       "level": "Beginner-Intermediate"
     }
@@ -89,7 +89,7 @@
       "id": 1,
       "name": "Clanky",
       "nickname": "The Pathfinder",
-      "image": "/assets/images/bots/1.jpeg",
+      "image": "assets/images/bots/1.jpeg",
       "role": "Maze Navigation Champion",
       "story": "Built by our first-year students, Clanky has won three consecutive maze navigation competitions with its innovative sensor array and adaptive pathfinding algorithm."
     },
@@ -97,7 +97,7 @@
       "id": 2,
       "name": "Whizzy",
       "nickname": "Speed Demon",
-      "image": "/assets/images/bots/2.jpeg",
+      "image": "assets/images/bots/2.jpeg",
       "role": "Line Following Specialist",
       "story": "Holding the lab record for the fastest line-following course completion, Whizzy demonstrates the perfect balance of speed and precision control."
     },
@@ -105,7 +105,7 @@
       "id": 3,
       "name": "Grabby",
       "nickname": "The Collector",
-      "image": "/assets/images/bots/3.jpeg",
+      "image": "assets/images/bots/3.jpeg",
       "role": "Object Retrieval Expert",
       "story": "With its articulated arm and sensitive pressure sensors, Grabby can pick up objects of various shapes and sizes with remarkable precision."
     },
@@ -113,7 +113,7 @@
       "id": 4,
       "name": "Scout",
       "nickname": "The Explorer",
-      "image": "/assets/images/bots/4.jpeg",
+      "image": "assets/images/bots/4.jpeg",
       "role": "Terrain Navigator",
       "story": "Designed for outdoor environments, Scout can traverse rough terrain and map its surroundings using a combination of LiDAR and computer vision."
     }
@@ -124,17 +124,17 @@
       "items": [
         {
           "name": "Arduino Uno",
-          "image": "/assets/images/electronics/controllers/arduino.jpg",
+          "image": "assets/images/electronics/controllers/arduino.jpg",
           "description": "Perfect for beginners, this microcontroller is the foundation of many of our introductory projects."
         },
         {
           "name": "Raspberry Pi 4",
-          "image": "/assets/images/electronics/controllers/raspberry.webp",
+          "image": "assets/images/electronics/controllers/raspberry.webp",
           "description": "When more processing power is needed, this single-board computer enables advanced computer vision and AI applications."
         },
         {
           "name": "ESP32",
-          "image": "/assets/images/electronics/controllers/esp32.jpg",
+          "image": "assets/images/electronics/controllers/esp32.jpg",
           "description": "Built-in WiFi and Bluetooth make this perfect for IoT and connected robot projects."
         }
       ]
@@ -144,17 +144,17 @@
       "items": [
         {
           "name": "Ultrasonic Distance Sensor",
-          "image": "/assets/images/electronics/sensors/ultrasonic.webp",
+          "image": "assets/images/electronics/sensors/ultrasonic.webp",
           "description": "Enables robots to detect obstacles and measure distances using sound waves."
         },
         {
           "name": "Infrared Proximity Sensor",
-          "image": "/assets/images/electronics/sensors/infrared.jpg",
+          "image": "assets/images/electronics/sensors/infrared.jpg",
           "description": "Perfect for line following and short-range object detection."
         },
         {
           "name": "Camera Module",
-          "image": "/assets/images/electronics/sensors/camera.jpg",
+          "image": "assets/images/electronics/sensors/camera.jpg",
           "description": "Adds visual perception capabilities for advanced navigation and object recognition."
         }
       ]
@@ -164,17 +164,17 @@
       "items": [
         {
           "name": "Servo Motors",
-          "image": "/assets/images/electronics/actuators/servo.png",
+          "image": "assets/images/electronics/actuators/servo.png",
           "description": "Provide precise rotational control for robot arms and joints."
         },
         {
           "name": "DC Motors with L298N Driver",
-          "image": "/assets/images/electronics/actuators/dc-motor.png",
+          "image": "assets/images/electronics/actuators/dc-motor.png",
           "description": "Power the wheels of our mobile robots with variable speed control."
         },
         {
           "name": "Stepper Motors",
-          "image": "/assets/images/electronics/actuators/stepper.webp",
+          "image": "assets/images/electronics/actuators/stepper.webp",
           "description": "When exact positioning is crucial, these motors move in precise increments."
         }
       ]
