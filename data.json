@@ -2,7 +2,7 @@
   "siteInfo": {
     "title": "TechRobotics Lab",
     "tagline": "Explore the Future. Build with Us.",
-    "logo": "/assets/images/logo.png",
+    "logo": "assets/images/logo.png",
     "missionStatement": "Empowering the next generation of innovators through hands-on robotics education and collaborative technology exploration."
   },
   "navigation": [
