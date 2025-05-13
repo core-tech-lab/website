@@ -41,47 +41,251 @@
       "description": "Perfect for beginners, this course covers the fundamentals of robot design, basic electronics, and simple programming concepts.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
       "duration": "8 weeks",
-      "level": "Beginner"
+      "level": "Beginner",
+      "tags": ["Hands-on", "Arduino", "Weekly"],
+      "detailedDescription": "This comprehensive introductory workshop is designed to give complete beginners a solid foundation in robotics. You'll start by learning the core principles of robot design and construction, then move on to essential electronics concepts like circuits, sensors, and actuators. Finally, you'll learn how to program your robot using Arduino, giving you the skills to create your very own autonomous robot by the end of the course.",
+      "prerequisites": "No prior experience needed. All materials and equipment will be provided.",
+      "targetAudience": "Ideal for high school students, hobbyists, and anyone curious about robotics and programming.",
+      "timeline": [
+        {
+          "title": "Introduction",
+          "description": "Overview of robotics concepts and basic principles",
+          "icon": "book"
+        },
+        {
+          "title": "Building",
+          "description": "Assembling robot chassis and components",
+          "icon": "tools"
+        },
+        {
+          "title": "Programming",
+          "description": "Learning Arduino basics and sensor integration",
+          "icon": "code-slash"
+        },
+        {
+          "title": "Testing",
+          "description": "Debugging and finalizing robot behavior",
+          "icon": "bug"
+        }
+      ],
+      "learningOutcomes": [
+        "Understand fundamental robotics principles and components",
+        "Build a functioning robot chassis with motors and sensors",
+        "Program basic autonomous behaviors using Arduino",
+        "Troubleshoot common robotics problems",
+        "Design and implement simple robotics challenges"
+      ],
+      "gallery": [
+        "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/4.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/5.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/6.jpeg"
+      ],
+      "tools": [
+        {
+          "name": "Arduino Uno",
+          "icon": "cpu",
+          "description": "Microcontroller used as the brain of your robot"
+        },
+        {
+          "name": "Breadboard",
+          "icon": "grid",
+          "description": "Used for prototyping electronic circuits"
+        },
+        {
+          "name": "DC Motors",
+          "icon": "disc",
+          "description": "Powers the wheels of your robot"
+        },
+        {
+          "name": "Ultrasonic Sensor",
+          "icon": "broadcast",
+          "description": "Allows the robot to detect obstacles"
+        },
+        {
+          "name": "LED Lights",
+          "icon": "lightbulb",
+          "description": "Visual indicators for robot status"
+        },
+        {
+          "name": "Jumper Wires",
+          "icon": "bezier",
+          "description": "Connects electronic components together"
+        }
+      ],
+      "date": "June 15 - August 3, 2025 | Saturdays 10:00 AM - 12:00 PM",
+      "location": "Innovation Lab, Building A",
+      "capacity": "15 participants",
+      "registrationStatus": "open",
+      "nextSession": null
     },
     {
       "id": 2,
-      "title": "Advanced Sensors & Control",
-      "description": "Dive deep into sensor integration, feedback systems, and autonomous navigation algorithms.",
+      "title": "Advanced Robot Programming",
+      "description": "Take your robotics skills to the next level with advanced programming techniques, PID controllers, and complex sensor integration.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/2.jpeg",
-      "duration": "10 weeks",
-      "level": "Intermediate"
+      "duration": "6 weeks",
+      "level": "Intermediate",
+      "tags": ["Advanced", "Programming", "PID Control"],
+      "detailedDescription": "This advanced workshop builds on the foundation of basic robotics knowledge and takes participants into more complex territory. You'll learn sophisticated programming techniques including state machines, PID controllers for precise movement, and how to integrate multiple sensors for advanced autonomous behaviors. By the end of this workshop, you'll be able to create robots that can navigate complex environments and perform precise tasks.",
+      "prerequisites": "Basic knowledge of Arduino programming and simple robotics. Completion of Introduction to Robotics workshop or equivalent experience recommended.",
+      "targetAudience": "Students, hobbyists and engineering professionals looking to enhance their robotics programming capabilities.",
+      "timeline": [
+        {
+          "title": "Review",
+          "description": "Quick review of robotics fundamentals",
+          "icon": "arrow-repeat"
+        },
+        {
+          "title": "Advanced Sensors",
+          "description": "Working with multiple sensor types",
+          "icon": "reception-4"
+        },
+        {
+          "title": "PID Control",
+          "description": "Implementing precise movement control",
+          "icon": "sliders"
+        },
+        {
+          "title": "Final Project",
+          "description": "Building an advanced autonomous robot",
+          "icon": "trophy"
+        }
+      ],
+      "learningOutcomes": [
+        "Implement PID controllers for precise motor control",
+        "Design and code state machines for complex robot behaviors",
+        "Integrate and calibrate multiple sensor types",
+        "Develop autonomous navigation capabilities",
+        "Apply advanced debugging techniques for robotics projects"
+      ],
+      "gallery": [
+        "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/4.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/5.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/6.jpeg"
+      ],
+      "tools": [
+        {
+          "name": "Arduino Mega",
+          "icon": "cpu-fill",
+          "description": "More powerful microcontroller with extra I/O pins"
+        },
+        {
+          "name": "IMU Sensor",
+          "icon": "compass",
+          "description": "For detecting orientation and acceleration"
+        },
+        {
+          "name": "Servo Motors",
+          "icon": "gear",
+          "description": "For precise angular positioning"
+        },
+        {
+          "name": "IR Sensors",
+          "icon": "broadcast-pin",
+          "description": "For line following and object detection"
+        },
+        {
+          "name": "Encoders",
+          "icon": "speedometer",
+          "description": "For precise wheel rotation measurement"
+        }
+      ],
+      "date": "September 10 - October 15, 2025 | Wednesdays 6:00 PM - 8:30 PM",
+      "location": "Engineering Lab, Building B",
+      "capacity": "12 participants",
+      "registrationStatus": "coming_soon",
+      "nextSession": "Registration opens July 15, 2025"
     },
     {
       "id": 3,
       "title": "AI for Robotics",
-      "description": "Learn to implement machine learning algorithms that enable robots to learn from their environment and make decisions.",
+      "description": "Explore the cutting-edge intersection of artificial intelligence and robotics, implementing machine learning models on robotic platforms.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/3.jpeg",
-      "duration": "12 weeks",
-      "level": "Advanced"
-    },
-    {
-      "id": 4,
-      "title": "Competitive Robot Building",
-      "description": "Design, build, and program robots to compete in challenges like maze navigation, sumo battles, and object retrieval.",
-      "image": "https://core-tech-lab.github.io/website/assets/images/workshops/4.jpeg",
-      "duration": "6 weeks",
-      "level": "All Levels"
-    },
-    {
-      "id": 5,
-      "title": "Robotics for Sustainable Solutions",
-      "description": "Create robots that address real-world environmental and social challenges.",
-      "image": "https://core-tech-lab.github.io/website/assets/images/workshops/5.jpeg",
-      "duration": "8 weeks",
-      "level": "Intermediate"
-    },
-    {
-      "id": 6,
-      "title": "DIY Home Automation",
-      "description": "Build smart home systems and devices that make everyday life easier and more efficient.",
-      "image": "https://core-tech-lab.github.io/website/assets/images/workshops/6.jpeg",
-      "duration": "6 weeks",
-      "level": "Beginner-Intermediate"
+      "duration": "10 weeks",
+      "level": "Advanced",
+      "tags": ["AI", "Machine Learning", "Computer Vision"],
+      "detailedDescription": "This advanced workshop explores the fascinating intersection of artificial intelligence and robotics. Participants will learn how to implement various machine learning techniques on robotic platforms, including computer vision for object recognition, reinforcement learning for adaptive behaviors, and neural networks for decision making. The workshop culminates in building an intelligent robot capable of learning from its environment and making autonomous decisions based on that learning.",
+      "prerequisites": "Proficiency in programming (Python) and basic understanding of robotics principles. Some familiarity with AI/ML concepts is helpful but not required.",
+      "targetAudience": "Computer science students, AI enthusiasts, and robotics professionals looking to integrate machine learning into their projects.",
+      "timeline": [
+        {
+          "title": "AI Fundamentals",
+          "description": "Introduction to AI concepts for robotics",
+          "icon": "braces"
+        },
+        {
+          "title": "Computer Vision",
+          "description": "Object detection and recognition",
+          "icon": "camera"
+        },
+        {
+          "title": "Reinforcement Learning",
+          "description": "Training robots through trial and error",
+          "icon": "arrows-angle-expand"
+        },
+        {
+          "title": "Neural Networks",
+          "description": "Implementing decision-making systems",
+          "icon": "diagram-3"
+        },
+        {
+          "title": "Final Project",
+          "description": "Building an intelligent autonomous robot",
+          "icon": "robot"
+        }
+      ],
+      "learningOutcomes": [
+        "Implement computer vision systems for object recognition",
+        "Design and train reinforcement learning algorithms for robotics",
+        "Deploy neural networks on embedded systems",
+        "Develop robots that can learn from their environments",
+        "Create adaptive decision-making systems for autonomous robots"
+      ],
+      "gallery": [
+        "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/4.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/5.jpeg",
+        "https://core-tech-lab.github.io/website/assets/images/workshops/6.jpeg"
+      ],
+      "tools": [
+        {
+          "name": "Raspberry Pi",
+          "icon": "cpu-fill",
+          "description": "Single-board computer for running ML models"
+        },
+        {
+          "name": "Camera Module",
+          "icon": "camera-fill",
+          "description": "For computer vision applications"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "braces-asterisk",
+          "description": "ML framework for training and inference"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "fire",
+          "description": "ML framework for neural networks"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "eye-fill",
+          "description": "Computer vision library"
+        },
+        {
+          "name": "ROS",
+          "icon": "hdd-network",
+          "description": "Robot Operating System for complex robots"
+        }
+      ],
+      "date": "October 5 - December 14, 2025 | Mondays & Thursdays 6:00 PM - 8:00 PM",
+      "location": "AI Research Center, Main Campus",
+      "capacity": "10 participants",
+      "registrationStatus": "closed",
+      "nextSession": "Spring 2026 - Dates TBA"
     }
   ],
   "bots": [

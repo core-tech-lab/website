@@ -140,7 +140,7 @@ function populateCourses(courses) {
         col.setAttribute('data-aos-delay', 100 + (index * 100));
 
         col.innerHTML = `
-            <div class="course-card">
+            <div class="course-card" data-course-id="${course.id}">
                 <div class="position-relative">
                     <img src="${course.image}" class="card-img-top" alt="${course.title}">
                     <span class="course-level">${course.level}</span>
@@ -157,7 +157,266 @@ function populateCourses(courses) {
 
         coursesContainer.appendChild(col);
     });
+
+    // Add event listeners to all course cards
+    const courseCards = document.querySelectorAll('.course-card');
+    courseCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const courseId = this.getAttribute('data-course-id');
+            openWorkshopDetails(courseId, courses);
+        });
+    });
 }
+
+// Function to handle opening the expanded workshop view
+function openWorkshopDetails(courseId, courses) {
+    // Find the course with the matching ID
+    const course = courses.find(c => c.id === parseInt(courseId));
+    if (!course) return;
+    
+    // Get overlay elements
+    const overlay = document.getElementById('workshop-overlay');
+    const content = overlay.querySelector('.workshop-expanded-content');
+    
+    // Prevent body scrolling
+    document.body.style.overflow = 'hidden';
+    
+    // Populate expanded content
+    content.innerHTML = `
+        <div class="workshop-hero">
+            <img src="${course.image}" alt="${course.title}">
+            <div class="workshop-hero-content">
+                <h1 class="workshop-title">${course.title}</h1>
+                <div class="workshop-tags">
+                    <span class="workshop-tag"><i class="bi bi-bar-chart me-1"></i>${course.level}</span>
+                    <span class="workshop-tag"><i class="bi bi-clock me-1"></i>${course.duration}</span>
+                    ${course.tags ? course.tags.map(tag => `<span class="workshop-tag"><i class="bi bi-tag me-1"></i>${tag}</span>`).join('') : ''}
+                </div>
+            </div>
+        </div>
+        
+        <div class="workshop-body">
+            <!-- Timeline Section -->
+            <div class="workshop-section">
+                <h3 class="workshop-section-title"><i class="bi bi-diagram-3"></i>Workshop Timeline</h3>
+                <div class="workshop-timeline">
+                    <div class="timeline-container">
+                        ${course.timeline ? course.timeline.map(phase => `
+                            <div class="timeline-phase">
+                                <div class="timeline-icon">
+                                    <i class="bi bi-${phase.icon}"></i>
+                                </div>
+                                <h4 class="timeline-title">${phase.title}</h4>
+                                <p class="timeline-desc">${phase.description}</p>
+                            </div>
+                        `).join('') : '<p>Timeline information not available</p>'}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Learning Outcomes -->
+            <div class="workshop-section">
+                <h3 class="workshop-section-title"><i class="bi bi-trophy"></i>Learning Outcomes</h3>
+                <div class="learning-outcomes">
+                    ${course.learningOutcomes ? course.learningOutcomes.map(outcome => `
+                        <div class="outcome-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>${outcome}</div>
+                        </div>
+                    `).join('') : '<p>Learning outcomes not specified</p>'}
+                </div>
+            </div>
+            
+            <!-- Media Gallery -->
+            ${course.gallery && course.gallery.length > 0 ? `
+            <div class="workshop-section">
+                <h3 class="workshop-section-title"><i class="bi bi-images"></i>Media Gallery</h3>
+                <div class="media-gallery">
+                    <button class="gallery-nav gallery-prev">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <div class="gallery-container">
+                        ${course.gallery.map(item => `
+                            <div class="gallery-item">
+                                <img src="${item}" alt="Workshop gallery image">
+                            </div>
+                        `).join('')}
+                    </div>
+                    <button class="gallery-nav gallery-next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            ` : ''}
+            
+            <!-- Tools & Components -->
+            ${course.tools && course.tools.length > 0 ? `
+            <div class="workshop-section">
+                <h3 class="workshop-section-title"><i class="bi bi-tools"></i>Tools & Components</h3>
+                <div class="tools-grid">
+                    ${course.tools.map(tool => `
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="bi bi-${tool.icon}"></i>
+                            </div>
+                            <div class="tool-name">${tool.name}</div>
+                            ${tool.description ? `<div class="tool-tooltip">${tool.description}</div>` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+            ` : ''}
+            
+            <!-- Detailed Description -->
+            <div class="workshop-section">
+                <h3 class="workshop-section-title">
+                    <i class="bi bi-info-circle"></i>Description & Requirements
+                    </h3>
+                <div>
+                    <p class="course-description">${course.detailedDescription || course.description}</p>
+                    ${course.prerequisites ? `
+                    <div class="mt-3">
+                        <strong>Prerequisites:</strong>
+                        <p class="course-description" >${course.prerequisites}</p>
+                    </div>
+                    ` : ''}
+                    ${course.targetAudience ? `
+                    <div class="mt-3">
+                        <strong>Target Audience:</strong>
+                        <p class="course-description">${course.targetAudience}</p>
+                    </div>
+                    ` : ''}
+                </div>
+            </div>
+            
+            <!-- Logistics -->
+            <div class="workshop-section">
+                <h3 class="workshop-section-title"><i class="bi bi-geo-alt"></i>Workshop Logistics</h3>
+                <div class="logistics-items">
+                    ${course.date ? `
+                    <div class="logistics-item">
+                        <div class="logistics-icon">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <div class="logistics-details">
+                            <div class="logistics-label">Date & Time</div>
+                            <div class="logistics-value">${course.date}</div>
+                        </div>
+                    </div>
+                    ` : ''}
+                    
+                    ${course.location ? `
+                    <div class="logistics-item">
+                        <div class="logistics-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="logistics-details">
+                            <div class="logistics-label">Location</div>
+                            <div class="logistics-value">${course.location}</div>
+                        </div>
+                    </div>
+                    ` : ''}
+                    
+                    ${course.duration ? `
+                    <div class="logistics-item">
+                        <div class="logistics-icon">
+                            <i class="bi bi-hourglass-split"></i>
+                        </div>
+                        <div class="logistics-details">
+                            <div class="logistics-label">Duration</div>
+                            <div class="logistics-value">${course.duration}</div>
+                        </div>
+                    </div>
+                    ` : ''}
+                    
+                    ${course.capacity ? `
+                    <div class="logistics-item">
+                        <div class="logistics-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="logistics-details">
+                            <div class="logistics-label">Capacity</div>
+                            <div class="logistics-value">${course.capacity}</div>
+                        </div>
+                    </div>
+                    ` : ''}
+                </div>
+            </div>
+            
+            <!-- Registration CTA -->
+            <div class="registration-cta">
+                ${course.registrationStatus === 'open' ? `
+                <button class="register-btn" data-course-id="${course.id}">Register Now</button>
+                ` : `
+                <div class="register-status">${course.registrationStatus === 'closed' ? 'Registration Closed' : 'Coming Soon'}</div>
+                `}
+                ${course.nextSession ? `<div class="register-status">Next session: ${course.nextSession}</div>` : ''}
+            </div>
+        </div>
+    `;
+    
+    // Show the overlay with animation
+    overlay.classList.add('active');
+    
+    // Setup gallery navigation if gallery exists
+    if (course.gallery && course.gallery.length > 0) {
+        const galleryContainer = overlay.querySelector('.gallery-container');
+        const prevBtn = overlay.querySelector('.gallery-prev');
+        const nextBtn = overlay.querySelector('.gallery-next');
+        
+        if (prevBtn && nextBtn && galleryContainer) {
+            prevBtn.addEventListener('click', () => {
+                galleryContainer.scrollBy({ left: -270, behavior: 'smooth' });
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                galleryContainer.scrollBy({ left: 270, behavior: 'smooth' });
+            });
+        }
+    }
+    
+    // Handle registration button click
+    const registerBtn = overlay.querySelector('.register-btn');
+    if (registerBtn) {
+        registerBtn.addEventListener('click', () => {
+            alert(`Registration process started for: ${course.title}`);
+            // You can replace this with your actual registration logic
+        });
+    }
+}
+
+// Function to close the workshop details
+function closeWorkshopDetails() {
+    const overlay = document.getElementById('workshop-overlay');
+    overlay.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+}
+
+// Initialize event listeners for overlay
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementById('close-workshop');
+    const overlay = document.getElementById('workshop-overlay');
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeWorkshopDetails);
+    }
+    
+    // Close when clicking outside the content
+    if (overlay) {
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                closeWorkshopDetails();
+            }
+        });
+    }
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeWorkshopDetails();
+        }
+    });
+});
 
 // Populate bots section
 function populateBots(bots) {
