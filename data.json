@@ -1,6 +1,6 @@
 {
   "siteInfo": {
-    "title": "TechRobotics Lab",
+    "title": "Core Tech Lab",
     "tagline": "Explore the Future. Build with Us.",
     "logo": "https://core-tech-lab.github.io/website/assets/images/logo.png",
     "missionStatement": "Empowering the next generation of innovators through hands-on robotics education and collaborative technology exploration."
@@ -22,7 +22,7 @@
     }
   },
   "about": {
-    "professorName": "Dr. Alex Morgan",
+    "professorName": "Dr. Hichem Aidoudi",
     "profileImage": "https://core-tech-lab.github.io/website/assets/images/professor.jpg",
     "title": "Professor of Robotics & AI",
     "biography": "With over 15 years of experience in robotics engineering and artificial intelligence, Dr. Morgan combines academic expertise with real-world application. Previously a lead engineer at SpaceTech Industries, Alex now dedicates time to inspiring the next generation of tech innovators.",
