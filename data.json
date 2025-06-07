@@ -1,17 +1,18 @@
 {
   "siteInfo": {
     "title": "Core Tech Lab",
-    "tagline": "Explore the Future. Build with Us.",
+    "tagline": "Coding the Future with Us",
     "logo": "https://core-tech-lab.github.io/website/assets/images/logo.png",
-    "missionStatement": "Empowering the next generation of innovators through hands-on robotics education and collaborative technology exploration."
+    "missionStatement": "Explore robotics, embedded systems, and innovation"
   },
+
   "navigation": [
-    { "name": "Home", "link": "#hero" },
-    { "name": "About", "link": "#about" },
-    { "name": "Courses", "link": "#courses" },
-    { "name": "Bots", "link": "#bots" },
-    { "name": "Tech Stack", "link": "#tech-stack" },
-    { "name": "Join", "link": "#join" },
+    { "name": "Accueil", "link": "#hero" },
+    { "name": "À Propos", "link": "#about" },
+    { "name": "Cours", "link": "#courses" },
+    { "name": "Projets", "link": "#bots" },
+    { "name": "Nos Produits", "link": "#products-section" },
+    { "name": "Rejoindre", "link": "#join" },
     { "name": "Contact", "link": "#contact" }
   ],
   "hero": {
@@ -21,59 +22,81 @@
       "link": "#join"
     }
   },
-  "about": {
-    "professorName": "Dr. Hichem Aidoudi",
-    "profileImage": "https://core-tech-lab.github.io/website/assets/images/professor.jpg",
-    "title": "Professor of Robotics & AI",
-    "biography": "With over 15 years of experience in robotics engineering and artificial intelligence, Dr. Morgan combines academic expertise with real-world application. Previously a lead engineer at SpaceTech Industries, Alex now dedicates time to inspiring the next generation of tech innovators.",
-    "philosophy": "I believe in learning by doing. Theory is important, but nothing compares to the experience of building something with your own hands and watching it come to life.",
-    "quote": "The robots of tomorrow are being imagined by the curious minds of today.",
-    "achievements": [
-      "IEEE Robotics Excellence Award 2023",
-      "Published author of 'Practical Robotics Design'",
-      "Founded the Young Innovators Robotics Competition"
-    ]
+  "strategy": {
+    "clubObjective": {
+      "title": "Notre Club",
+      "description": "Notre club vise à développer les compétences en robotique et nouvelles technologies (systèmes embarqués, IOT, IA...) à travers une approche technique et progressive."
+    },
+    "formationContinue": {
+      "title": "Formation Continue",
+      "description": "Nous proposons des ateliers pratiques pour apprendre l'électronique de base, la programmation, les membres travaillent progressivement sur des mini-projets (robots, systèmes automatisés, objets connectés) pour appliquer leurs connaissances et participer aux concours de robotique.",
+      "technologies": [
+        "Arduino",
+        "ESP32",
+        "Raspberry Pi",
+        "STM32",
+        "Microcontrôleur PIC"
+      ]
+    },
+    "formationsPersonnalisees": {
+      "title": "Formations Personnalisées",
+      "intro": "Nous proposons:",
+      "formations": [
+        {
+          "title": "Modélisation et Impression 3D",
+          "description": "Formation complète sur la modélisation et l'impression 3D (Théorie et pratique)"
+        },
+        {
+          "title": "Gravure CNC",
+          "description": "Formation sur la gravure CNC mécanique et laser (Théorie et pratique)"
+        }
+      ]
+    },
+    "teamSpirit": {
+      "title": "Esprit d'Équipe",
+      "description": "Chaque activité est conçue pour encourager la collaboration,  la résolution de problèmes et l'innovation."
+    }
   },
   "courses": [
     {
       "id": 1,
-      "title": "Introduction to Robotics",
-      "description": "Perfect for beginners, this course covers the fundamentals of robot design, basic electronics, and simple programming concepts.",
+      "title": "Introduction à la Robotique",
+      "description": "Parfait pour les débutants, ce cours couvre les fondamentaux de la conception de robots, l'électronique de base et les concepts de programmation simples.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
-      "duration": "8 weeks",
-      "level": "Beginner",
-      "tags": ["Hands-on", "Arduino", "Weekly"],
-      "detailedDescription": "This comprehensive introductory workshop is designed to give complete beginners a solid foundation in robotics. You'll start by learning the core principles of robot design and construction, then move on to essential electronics concepts like circuits, sensors, and actuators. Finally, you'll learn how to program your robot using Arduino, giving you the skills to create your very own autonomous robot by the end of the course.",
-      "prerequisites": "No prior experience needed. All materials and equipment will be provided.",
-      "targetAudience": "Ideal for high school students, hobbyists, and anyone curious about robotics and programming.",
+      "duration": "8 semaines",
+      "level": "Débutant",
+      "tags": ["Pratique", "Arduino", "Hebdomadaire"],
+      "detailedDescription": "Cet atelier d'introduction complet est conçu pour donner aux débutants complets une base solide en robotique. Vous commencerez par apprendre les principes fondamentaux de la conception et de la construction de robots, puis passerez aux concepts électroniques essentiels comme les circuits, les capteurs et les actionneurs. Enfin, vous apprendrez à programmer votre robot en utilisant Arduino, vous donnant les compétences pour créer votre propre robot autonome à la fin du cours.",
+      "prerequisites": "Aucune expérience préalable nécessaire. Tous les matériaux et équipements seront fournis.",
+      "targetAudience": "Idéal pour les lycéens, les passionnés et toute personne curieuse de la robotique et de la programmation.",
       "timeline": [
         {
           "title": "Introduction",
-          "description": "Overview of robotics concepts and basic principles",
+          "description": "Aperçu des concepts de robotique et principes de base",
           "icon": "book"
         },
         {
-          "title": "Building",
-          "description": "Assembling robot chassis and components",
+          "title": "Construction",
+          "description": "Assemblage du châssis du robot et des composants",
           "icon": "tools"
         },
         {
-          "title": "Programming",
-          "description": "Learning Arduino basics and sensor integration",
+          "title": "Programmation",
+          "description": "Apprentissage des bases d'Arduino et intégration des capteurs",
           "icon": "code-slash"
         },
         {
-          "title": "Testing",
-          "description": "Debugging and finalizing robot behavior",
+          "title": "Tests",
+          "description": "Débogage et finalisation du comportement du robot",
           "icon": "bug"
         }
       ],
       "learningOutcomes": [
-        "Understand fundamental robotics principles and components",
-        "Build a functioning robot chassis with motors and sensors",
-        "Program basic autonomous behaviors using Arduino",
-        "Troubleshoot common robotics problems",
-        "Design and implement simple robotics challenges"
+        "Comprendre les principes fondamentaux de la robotique et les composants",
+        "Construire un châssis de robot fonctionnel avec moteurs et capteurs",
+        "Programmer des comportements autonomes de base avec Arduino",
+        "Résoudre les problèmes courants de robotique",
+        "Concevoir et implémenter des défis robotiques simples"
       ],
       "gallery": [
         "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
@@ -85,79 +108,79 @@
         {
           "name": "Arduino Uno",
           "icon": "cpu",
-          "description": "Microcontroller used as the brain of your robot"
+          "description": "Microcontrôleur utilisé comme cerveau de votre robot"
         },
         {
-          "name": "Breadboard",
+          "name": "Plaque d'essai",
           "icon": "grid",
-          "description": "Used for prototyping electronic circuits"
+          "description": "Utilisée pour le prototypage de circuits électroniques"
         },
         {
-          "name": "DC Motors",
+          "name": "Moteurs DC",
           "icon": "disc",
-          "description": "Powers the wheels of your robot"
+          "description": "Alimente les roues de votre robot"
         },
         {
-          "name": "Ultrasonic Sensor",
+          "name": "Capteur ultrasonique",
           "icon": "broadcast",
-          "description": "Allows the robot to detect obstacles"
+          "description": "Permet au robot de détecter les obstacles"
         },
         {
-          "name": "LED Lights",
+          "name": "LED",
           "icon": "lightbulb",
-          "description": "Visual indicators for robot status"
+          "description": "Indicateurs visuels pour l'état du robot"
         },
         {
-          "name": "Jumper Wires",
+          "name": "Fils de connexion",
           "icon": "bezier",
-          "description": "Connects electronic components together"
+          "description": "Connecte les composants électroniques ensemble"
         }
       ],
-      "date": "June 15 - August 3, 2025 | Saturdays 10:00 AM - 12:00 PM",
-      "location": "Innovation Lab, Building A",
+      "date": "15 juin - 3 août 2025 | Samedis 10h00 - 12h00",
+      "location": "Laboratoire d'Innovation, Bâtiment A",
       "capacity": "15 participants",
       "registrationStatus": "open",
       "nextSession": null
     },
     {
       "id": 2,
-      "title": "Advanced Robot Programming",
-      "description": "Take your robotics skills to the next level with advanced programming techniques, PID controllers, and complex sensor integration.",
+      "title": "Programmation Avancée de Robots",
+      "description": "Amenez vos compétences en robotique au niveau supérieur avec des techniques de programmation avancées, des contrôleurs PID et l'intégration de capteurs complexes.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/2.jpeg",
-      "duration": "6 weeks",
-      "level": "Intermediate",
-      "tags": ["Advanced", "Programming", "PID Control"],
-      "detailedDescription": "This advanced workshop builds on the foundation of basic robotics knowledge and takes participants into more complex territory. You'll learn sophisticated programming techniques including state machines, PID controllers for precise movement, and how to integrate multiple sensors for advanced autonomous behaviors. By the end of this workshop, you'll be able to create robots that can navigate complex environments and perform precise tasks.",
-      "prerequisites": "Basic knowledge of Arduino programming and simple robotics. Completion of Introduction to Robotics workshop or equivalent experience recommended.",
-      "targetAudience": "Students, hobbyists and engineering professionals looking to enhance their robotics programming capabilities.",
+      "duration": "6 semaines",
+      "level": "Intermédiaire",
+      "tags": ["Avancé", "Programmation", "Contrôle PID"],
+      "detailedDescription": "Cet atelier avancé s'appuie sur les fondements des connaissances de base en robotique et amène les participants vers un territoire plus complexe. Vous apprendrez des techniques de programmation sophistiquées incluant les machines à états, les contrôleurs PID pour un mouvement précis, et comment intégrer plusieurs capteurs pour des comportements autonomes avancés. À la fin de cet atelier, vous serez capable de créer des robots qui peuvent naviguer dans des environnements complexes et effectuer des tâches précises.",
+      "prerequisites": "Connaissances de base en programmation Arduino et robotique simple. Accomplissement de l'atelier Introduction à la Robotique ou expérience équivalente recommandée.",
+      "targetAudience": "Étudiants, passionnés et professionnels de l'ingénierie cherchant à améliorer leurs capacités de programmation robotique.",
       "timeline": [
         {
-          "title": "Review",
-          "description": "Quick review of robotics fundamentals",
+          "title": "Révision",
+          "description": "Révision rapide des fondamentaux de la robotique",
           "icon": "arrow-repeat"
         },
         {
-          "title": "Advanced Sensors",
-          "description": "Working with multiple sensor types",
+          "title": "Capteurs Avancés",
+          "description": "Travail avec plusieurs types de capteurs",
           "icon": "reception-4"
         },
         {
-          "title": "PID Control",
-          "description": "Implementing precise movement control",
+          "title": "Contrôle PID",
+          "description": "Implémentation d'un contrôle de mouvement précis",
           "icon": "sliders"
         },
         {
-          "title": "Final Project",
-          "description": "Building an advanced autonomous robot",
+          "title": "Projet Final",
+          "description": "Construction d'un robot autonome avancé",
           "icon": "trophy"
         }
       ],
       "learningOutcomes": [
-        "Implement PID controllers for precise motor control",
-        "Design and code state machines for complex robot behaviors",
-        "Integrate and calibrate multiple sensor types",
-        "Develop autonomous navigation capabilities",
-        "Apply advanced debugging techniques for robotics projects"
+        "Implémenter des contrôleurs PID pour un contrôle moteur précis",
+        "Concevoir et coder des machines à états pour des comportements robotiques complexes",
+        "Intégrer et calibrer plusieurs types de capteurs",
+        "Développer des capacités de navigation autonome",
+        "Appliquer des techniques de débogage avancées pour les projets robotiques"
       ],
       "gallery": [
         "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
@@ -169,79 +192,75 @@
         {
           "name": "Arduino Mega",
           "icon": "cpu-fill",
-          "description": "More powerful microcontroller with extra I/O pins"
+          "description": "Microcontrôleur plus puissant avec des pins E/S supplémentaires"
         },
         {
-          "name": "IMU Sensor",
+          "name": "Capteur IMU",
           "icon": "compass",
-          "description": "For detecting orientation and acceleration"
+          "description": "Pour détecter l'orientation et l'accélération"
         },
         {
-          "name": "Servo Motors",
+          "name": "Servo-moteurs",
           "icon": "gear",
-          "description": "For precise angular positioning"
+          "description": "Pour un positionnement angulaire précis"
         },
         {
-          "name": "IR Sensors",
+          "name": "Capteurs IR",
           "icon": "broadcast-pin",
-          "description": "For line following and object detection"
+          "description": "Pour le suivi de ligne et la détection d'objets"
         },
         {
-          "name": "Encoders",
+          "name": "Encodeurs",
           "icon": "speedometer",
-          "description": "For precise wheel rotation measurement"
+          "description": "Pour une mesure précise de la rotation des roues"
         }
       ],
-      "date": "September 10 - October 15, 2025 | Wednesdays 6:00 PM - 8:30 PM",
-      "location": "Engineering Lab, Building B",
+      "date": "10 septembre - 15 octobre 2025 | Mercredis 18h00 - 20h30",
+      "location": "Laboratoire d'Ingénierie, Bâtiment B",
       "capacity": "12 participants",
       "registrationStatus": "coming_soon",
-      "nextSession": "Registration opens July 15, 2025"
+      "nextSession": "Inscription ouvre le 15 juillet 2025"
     },
     {
       "id": 3,
-      "title": "AI for Robotics",
-      "description": "Explore the cutting-edge intersection of artificial intelligence and robotics, implementing machine learning models on robotic platforms.",
+      "title": "Impression 3D et Gravure CNC",
+      "description": "Explorez les technologies de fabrication numérique modernes avec l'impression 3D et la gravure CNC, de la conception à la réalisation.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/3.jpeg",
-      "duration": "10 weeks",
-      "level": "Advanced",
-      "tags": ["AI", "Machine Learning", "Computer Vision"],
-      "detailedDescription": "This advanced workshop explores the fascinating intersection of artificial intelligence and robotics. Participants will learn how to implement various machine learning techniques on robotic platforms, including computer vision for object recognition, reinforcement learning for adaptive behaviors, and neural networks for decision making. The workshop culminates in building an intelligent robot capable of learning from its environment and making autonomous decisions based on that learning.",
-      "prerequisites": "Proficiency in programming (Python) and basic understanding of robotics principles. Some familiarity with AI/ML concepts is helpful but not required.",
-      "targetAudience": "Computer science students, AI enthusiasts, and robotics professionals looking to integrate machine learning into their projects.",
+      "duration": "10 semaines",
+      "level": "Avancé",
+      "tags": ["Impression 3D", "CNC", "Fabrication Numérique"],
+      "detailedDescription": "Cet atelier avancé explore le monde fascinant de la fabrication numérique moderne. Les participants apprendront à maîtriser les technologies d'impression 3D et de gravure CNC, depuis la conception assistée par ordinateur jusqu'à la fabrication finale. Vous découvrirez les différents matériaux, les techniques de modélisation 3D, la programmation des machines CNC, et les applications pratiques dans l'industrie et le prototypage. L'atelier culmine avec la réalisation d'un projet personnel complet utilisant ces deux technologies.",
+      "prerequisites": "Connaissances de base en informatique et en dessin technique. Une expérience préalable en CAO est utile mais non requise.",
+      "targetAudience": "Étudiants en ingénierie, designers, makers et professionnels souhaitant maîtriser les outils de fabrication numérique moderne.",
       "timeline": [
         {
-          "title": "AI Fundamentals",
-          "description": "Introduction to AI concepts for robotics",
+          "title": "Fondamentaux CAO",
+          "description": "Introduction à la conception assistée par ordinateur",
           "icon": "braces"
         },
         {
-          "title": "Computer Vision",
-          "description": "Object detection and recognition",
-          "icon": "camera"
+          "title": "Impression 3D",
+          "description": "Techniques de modélisation et d'impression 3D",
+          "icon": "printer"
         },
         {
-          "title": "Reinforcement Learning",
-          "description": "Training robots through trial and error",
-          "icon": "arrows-angle-expand"
+          "title": "Gravure CNC",
+          "description": "Programmation et utilisation des machines CNC",
+          "icon": "gear-wide-connected"
         },
         {
-          "title": "Neural Networks",
-          "description": "Implementing decision-making systems",
-          "icon": "diagram-3"
-        },
-        {
-          "title": "Final Project",
-          "description": "Building an intelligent autonomous robot",
-          "icon": "robot"
+          "title": "Projet Final",
+          "description": "Réalisation d'un projet complet multi-technologie",
+          "icon": "trophy"
         }
       ],
       "learningOutcomes": [
-        "Implement computer vision systems for object recognition",
-        "Design and train reinforcement learning algorithms for robotics",
-        "Deploy neural networks on embedded systems",
-        "Develop robots that can learn from their environments",
-        "Create adaptive decision-making systems for autonomous robots"
+        "Maîtriser la modélisation 3D avec des logiciels professionnels",
+        "Configurer et utiliser des imprimantes 3D pour différents matériaux",
+        "Programmer et opérer des machines CNC pour la gravure",
+        "Comprendre les propriétés des matériaux et leurs applications",
+        "Développer des projets de fabrication numérique complets",
+        "Optimiser les processus de production pour la qualité et l'efficacité"
       ],
       "gallery": [
         "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
@@ -251,41 +270,41 @@
       ],
       "tools": [
         {
-          "name": "Raspberry Pi",
+          "name": "Fusion 360",
           "icon": "cpu-fill",
-          "description": "Single-board computer for running ML models"
+          "description": "Logiciel de CAO professionnel pour la modélisation 3D"
         },
         {
-          "name": "Camera Module",
-          "icon": "camera-fill",
-          "description": "For computer vision applications"
+          "name": "Imprimante 3D FDM",
+          "icon": "printer-fill",
+          "description": "Pour l'impression de prototypes en plastique"
         },
         {
-          "name": "TensorFlow",
-          "icon": "braces-asterisk",
-          "description": "ML framework for training and inference"
+          "name": "Machine CNC",
+          "icon": "gear-wide-connected",
+          "description": "Pour la gravure de précision sur divers matériaux"
         },
         {
-          "name": "PyTorch",
-          "icon": "fire",
-          "description": "ML framework for neural networks"
+          "name": "Cura Slicer",
+          "icon": "layers",
+          "description": "Logiciel de tranchage pour l'impression 3D"
         },
         {
-          "name": "OpenCV",
-          "icon": "eye-fill",
-          "description": "Computer vision library"
-        },
-        {
-          "name": "ROS",
+          "name": "Mach3 LinuxCNC",
           "icon": "hdd-network",
-          "description": "Robot Operating System for complex robots"
+          "description": "Logiciels de contrôle pour machines CNC"
+        },
+        {
+          "name": "Matériaux Variés",
+          "icon": "box-seam-fill",
+          "description": "PLA, ABS, bois, acrylique, métaux pour différents projets"
         }
       ],
-      "date": "October 5 - December 14, 2025 | Mondays & Thursdays 6:00 PM - 8:00 PM",
-      "location": "AI Research Center, Main Campus",
+      "date": "5 octobre - 14 décembre 2025 | Lundis & Jeudis 18h00 - 20h00",
+      "location": "Atelier de Fabrication Numérique, Campus Principal",
       "capacity": "10 participants",
       "registrationStatus": "closed",
-      "nextSession": "Spring 2026 - Dates TBA"
+      "nextSession": "Printemps 2026 - Dates à confirmer"
     }
   ],
   "bots": [
@@ -324,109 +343,156 @@
   ],
   "techStack": [
     {
-      "category": "Controllers",
+      "category": "Contrôleurs",
       "items": [
         {
           "name": "Arduino Uno",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/arduino.jpg",
-          "description": "Perfect for beginners, this microcontroller is the foundation of many of our introductory projects."
+          "description": "Parfait pour les débutants, ce microcontrôleur est la base de nombreux projets d'introduction.",
+          "price": "25€"
         },
         {
           "name": "Raspberry Pi 4",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/raspberry.webp",
-          "description": "When more processing power is needed, this single-board computer enables advanced computer vision and AI applications."
+          "description": "Lorsqu'une puissance de calcul plus élevée est nécessaire, cet ordinateur monocarte permet des applications avancées de vision par ordinateur et d'IA.",
+          "price": "89€"
         },
         {
           "name": "ESP32",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/esp32.jpg",
-          "description": "Built-in WiFi and Bluetooth make this perfect for IoT and connected robot projects."
+          "description": "Le Wi-Fi et le Bluetooth intégrés en font un excellent choix pour les projets IoT et les robots connectés.",
+          "price": "35€"
+        },
+        {
+          "name": "Arduino Nano",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/arduino.jpg",
+          "description": "Version compacte de l'Arduino Uno, idéale pour les projets avec contraintes d'espace.",
+          "price": "18€"
+        },
+        {
+          "name": "Micro:bit",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/esp32.jpg",
+          "description": "Parfait pour l'apprentissage de la programmation et l'électronique pour les jeunes.",
+          "price": "22€"
         }
       ]
     },
     {
-      "category": "Sensors",
+      "category": "Capteurs",
       "items": [
         {
-          "name": "Ultrasonic Distance Sensor",
+          "name": "Capteur de distance à ultrasons",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/ultrasonic.webp",
-          "description": "Enables robots to detect obstacles and measure distances using sound waves."
+          "description": "Permet aux robots de détecter les obstacles et de mesurer les distances à l'aide d'ondes sonores.",
+          "price": "8€"
         },
         {
-          "name": "Infrared Proximity Sensor",
+          "name": "Capteur de proximité infrarouge",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/infrared.jpg",
-          "description": "Perfect for line following and short-range object detection."
+          "description": "Idéal pour le suivi de ligne et la détection d'objets à courte distance.",
+          "price": "5€"
         },
         {
-          "name": "Camera Module",
+          "name": "Module caméra",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/camera.jpg",
-          "description": "Adds visual perception capabilities for advanced navigation and object recognition."
+          "description": "Ajoute des capacités de perception visuelle pour la navigation avancée et la reconnaissance d'objets.",
+          "price": "45€"
+        },
+        {
+          "name": "Capteur de température DHT22",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/infrared.jpg",
+          "description": "Mesure précise de la température et de l'humidité pour les projets environnementaux.",
+          "price": "12€"
+        },
+        {
+          "name": "Gyroscope MPU6050",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/ultrasonic.webp",
+          "description": "Capteur de mouvement 6 axes pour la stabilisation et la navigation robotique.",
+          "price": "7€"
         }
       ]
     },
     {
-      "category": "Actuators",
+      "category": "Actionneurs",
       "items": [
         {
-          "name": "Servo Motors",
+          "name": "Servomoteurs",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/servo.png",
-          "description": "Provide precise rotational control for robot arms and joints."
+          "description": "Fournissent un contrôle de rotation précis pour les bras et articulations des robots.",
+          "price": "15€"
         },
         {
-          "name": "DC Motors with L298N Driver",
+          "name": "Moteurs à courant continu avec pilote L298N",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/dc-motor.png",
-          "description": "Power the wheels of our mobile robots with variable speed control."
+          "description": "Propulsent les roues de nos robots mobiles avec un contrôle de vitesse variable.",
+          "price": "12€"
         },
         {
-          "name": "Stepper Motors",
+          "name": "Moteurs pas à pas",
           "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/stepper.webp",
-          "description": "When exact positioning is crucial, these motors move in precise increments."
+          "description": "Quand un positionnement précis est crucial, ces moteurs se déplacent par incréments définis.",
+          "price": "28€"
+        },
+        {
+          "name": "Moteur Brushless",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/dc-motor.png",
+          "description": "Moteur haute performance pour applications nécessitant vitesse et efficacité.",
+          "price": "55€"
+        },
+        {
+          "name": "Actionneur linéaire",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/servo.png",
+          "description": "Mouvement linéaire précis pour mécanismes de levage et de positionnement.",
+          "price": "42€"
         }
       ]
     }
   ],
-  "join": {
-    "whyJoin": [
-      "Hands-on experience with cutting-edge technology",
-      "Collaborative problem-solving environment",
-      "Expert guidance from industry professionals",
-      "Access to state-of-the-art equipment and facilities"
-    ],
-    "whatYouLearn": [
-      "Robot design and construction",
-      "Programming and control systems",
-      "Electronics and circuitry basics",
-      "Problem-solving methodology",
-      "Project management skills"
-    ],
-    "welcomeMessage": "We welcome curious minds and creative tinkerers!",
-    "ctaButton": {
-      "text": "Express Interest",
-      "link": "#contact"
-    }
-  },
+
+"join" :{ 
+  "whyJoin": [
+    "Expérience pratique avec des technologies de pointe",
+    "Environnement collaboratif de résolution de problèmes",
+    "Encadrement par des professionnels de l'industrie",
+    "Accès à des équipements et installations de dernière génération"
+  ],
+  "whatYouLearn": [
+    "Conception et construction de robots",
+    "Programmation et systèmes de contrôle",
+    "Bases de l'électronique et des circuits",
+    "Méthodologie de résolution de problèmes",
+    "Compétences en gestion de projet"
+  ],
+  "welcomeMessage": "Nous accueillons les esprits curieux et les bricoleurs créatifs !",
+  "ctaButton": {
+    "text": "Exprimer mon intérêt",
+    "link": "#contact"
+  }
+},
+
   "contact": {
-    "email": "info@techroboticslab.edu",
-    "phone": "+1 (555) 123-4567",
-    "address": "Innovation Building, 123 Tech Avenue, Silicon Valley, CA 94024",
+    "email": "coretechlab.contact@gmail.com",
+    "phone": "+216 27 78 53 20",
+    "address": "Rue Mongi BALI Saint Jacques Nelle MEDINA BEN AROUS",
     "socialMedia": [
       {
         "platform": "Twitter",
-        "link": "https://twitter.com/techroboticslab",
+        "link": "#",
         "icon": "bi-twitter"
       },
       {
         "platform": "Instagram",
-        "link": "https://instagram.com/techroboticslab",
+        "link": "#",
         "icon": "bi-instagram"
       },
       {
         "platform": "YouTube",
-        "link": "https://youtube.com/techroboticslab",
+        "link": "#",
         "icon": "bi-youtube"
       },
       {
         "platform": "GitHub",
-        "link": "https://github.com/techroboticslab",
+        "link": "#",
         "icon": "bi-github"
       }
     ]

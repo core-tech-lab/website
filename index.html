@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,13 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
@@ -50,31 +54,49 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Strategy Section -->
+    <section id="strategy" class="py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">About the Professor</h2>
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">NOTRE STRATÉGIE</h2>
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
-                    <div class="professor-image-container">
-                        <img src="" id="professor-image" alt="Professor" class="img-fluid rounded-circle">
+                    <div class="strategy-icon-container">
+                        <div class="strategy-icon-inner">
+                            <i class="bi bi-gear-fill strategy-main-icon"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
-                    <h3 class="mb-3" id="professor-name"></h3>
-                    <p class="text-muted mb-3" id="professor-title"></p>
-                    <div class="mb-4" id="professor-bio"></div>
-                    <div class="quote-box mb-4">
-                        <i class="bi bi-quote fs-1 text-primary"></i>
-                        <p class="lead fst-italic mb-0" id="professor-quote"></p>
+                    <div class="strategy-card mb-4">
+                        <h3 class="strategy-section-title">
+                            <i class="bi bi-bullseye strategy-section-icon"></i>
+                            <span id="club-objective-title"></span>
+                        </h3>
+                        <p id="club-objective-description"></p>
                     </div>
-                    <h4 class="mb-3">Teaching Philosophy</h4>
-                    <p id="professor-philosophy"></p>
-                    <div class="mt-4">
-                        <h5 class="mb-3">Achievements</h5>
-                        <ul class="achievement-list" id="professor-achievements">
-                            <!-- Achievements will be populated by JavaScript -->
-                        </ul>
+
+                    <div class="strategy-card mb-4">
+                        <h4 class="strategy-section-title">
+                            <i class="bi bi-mortarboard strategy-section-icon"></i>
+                            <span id="formation-continue-title"></span>
+                        </h4>
+                        <p id="formation-continue-description"></p>
+                        <div id="technologies" class="mt-3"></div>
+                    </div>
+
+                    <div class="strategy-card mb-4">
+                        <h4 class="strategy-section-title">
+                            <i class="bi bi-person-gear strategy-section-icon"></i>
+                            <span id="formations-personnalisees-title"></span>
+                        </h4>
+                        <p id="formations-personnalisees-intro"></p>
+                        <div id="personalized-formations"></div>
+                    </div>
+
+                    <div class="team-spirit-box" data-aos="zoom-in">
+                        <i class="bi bi-people-fill team-spirit-icon"></i>
+                        <h4 id="team-spirit-title"></h4>
+                        <p class="mb-0" id="team-spirit-description"></p>
                     </div>
                 </div>
             </div>
@@ -84,12 +106,12 @@
     <!-- Courses Section -->
     <section id="courses" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Courses & Workshops</h2>
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Cours & Ateliers</h2>
             <div class="row g-4" id="courses-container">
                 <!-- Course cards will be populated by JavaScript -->
             </div>
         </div>
-        
+
         <!-- Expanded Workshop View Overlay -->
         <div id="workshop-overlay" class="workshop-overlay">
             <div class="workshop-expanded-container">
@@ -113,17 +135,22 @@
         </div>
     </section>
 
-    <!-- Tech Stack Section -->
-    <section id="tech-stack" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Tech Stack Explorer 🧰</h2>
-            
-            <ul class="nav nav-pills mb-4 justify-content-center" id="tech-stack-tabs" role="tablist">
-                <!-- Tech stack category tabs will be populated by JavaScript -->
-            </ul>
-            
-            <div class="tab-content" id="tech-stack-content">
-                <!-- Tech stack category content will be populated by JavaScript -->
+    <!-- Products Section -->
+    <section id="products-section">
+        <div class="products-section-title">
+            <h2>Nos Produits</h2>
+            <p>Découvrez notre gamme complète de produits technologiques innovants</p>
+        </div>
+
+        <div class="products-container">
+            <div class="category-controls" id="category-controls">
+                <!-- Category buttons will be populated by JavaScript -->
+            </div>
+
+            <div class="rotation-wheel">
+                <div class="wheel-container" id="wheel-container">
+                    <!-- Products will be populated by JavaScript -->
+                </div>
             </div>
         </div>
     </section>
@@ -133,16 +160,16 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title mb-4" data-aos="fade-up">Join the Club</h2>
+                    <h2 class="section-title mb-4" data-aos="fade-up">Rejoindre Le Club</h2>
                     <div class="glass-card p-4 p-md-5" data-aos="fade-up">
                         <div class="mb-4">
-                            <h3 class="mb-3">Why join?</h3>
+                            <h3 class="mb-3">Pourquoi?</h3>
                             <ul class="text-start join-list" id="why-join-list">
                                 <!-- Why join points will be populated by JavaScript -->
                             </ul>
                         </div>
                         <div class="mb-4">
-                            <h3 class="mb-3">What you'll learn</h3>
+                            <h3 class="mb-3">Compétences acquises</h3>
                             <ul class="text-start join-list" id="what-you-learn-list">
                                 <!-- What you'll learn points will be populated by JavaScript -->
                             </ul>
@@ -160,11 +187,11 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-dark">
         <div class="container">
-            <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">Contact Us</h2>
+            <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">Contactez-nous</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6 mb-4 mb-md-0">
                     <div class="glass-card p-4" data-aos="fade-right">
-                        <h3 class="mb-4">Get in Touch</h3>
+                        <h3 class="mb-4">Contact</h3>
                         <div class="mb-3">
                             <i class="bi bi-envelope-fill me-2 text-primary"></i>
                             <span id="contact-email"></span>
@@ -185,7 +212,7 @@
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="glass-card p-4">
-                        <h3 class="mb-4">Send a Message</h3>
+                        <h3 class="mb-4">Envoyer Un Message</h3>
                         <form id="contact-form">
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Your Name" required>
@@ -205,7 +232,7 @@
                             <div class="mb-3">
                                 <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            <button type="submit" class="btn btn-primary w-100">Envoyer Message</button>
                         </form>
                     </div>
                 </div>
@@ -216,7 +243,7 @@
     <!-- Footer -->
     <footer class="py-4 bg-darker text-center">
         <div class="container">
-            <p class="mb-0 text-muted">© <span id="current-year"></span> TechRobotics Lab. All rights reserved.</p>
+            <p class="mb-0 " style="color: rgba(255, 255, 255, 0.5);">© <span id="current-year"></span> Core Tech Lab <br> All rights reserved</p>
         </div>
     </footer>
 
@@ -227,4 +254,5 @@
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
