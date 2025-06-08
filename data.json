@@ -317,24 +317,52 @@
     },
     {
       "id": 2,
-      "name": "Whizzy",
-      "image": "https://core-tech-lab.github.io/website/assets/images/bots/2.jpeg",
-      "role": "Line Following Specialist",
-      "story": "Holding the lab record for the fastest line-following course completion, Whizzy demonstrates the perfect balance of speed and precision control."
+      "name": "Contrôle d'éclairage intelligent",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/Contrôle d'éclairage intelligent avec capteur PIR et LDR.png",
+      "role": "Automatisation",
+      "story": "Un système d'éclairage intelligent qui ajuste la luminosité en fonction de la présence humaine et de la lumière ambiante, optimisant ainsi la consommation d'énergie."
     },
     {
       "id": 3,
-      "name": "Grabby",
-      "image": "https://core-tech-lab.github.io/website/assets/images/bots/3.jpeg",
-      "role": "Object Retrieval Expert",
-      "story": "With its articulated arm and sensitive pressure sensors, Grabby can pick up objects of various shapes and sizes with remarkable precision."
+      "name": "Controle robot par smartphone",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/controle robot par smartphone.png",
+      "role": "Contrôle à distance",
+      "story": "Avec son bras articulé et ses capteurs de pression sensibles, Grabby peut saisir des objets de formes et tailles variées avec une précision remarquable."
     },
     {
       "id": 4,
-      "name": "Scout",
-      "image": "https://core-tech-lab.github.io/website/assets/images/bots/4.jpeg",
-      "role": "Terrain Navigator",
-      "story": "Designed for outdoor environments, Scout can traverse rough terrain and map its surroundings using a combination of LiDAR and computer vision."
+      "name": "Contrôle d'accès par RFID",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/Système RFID pour contrôle d'accès avec affichage LCD.png",
+      "role": "Sécurité",
+      "story": "Un système de contrôle d'accès sécurisé utilisant la technologie RFID, avec un affichage LCD pour indiquer l'état d'accès et les informations utilisateur."
+    },
+    {
+      "id": 5,
+      "name": "Suiveur de ligne",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/robot suiveur de lignes.png",
+      "role": "Navigation autonome",
+      "story": "Un robot capable de suivre une ligne tracée au sol, utilisant des capteurs infrarouges pour détecter et suivre le chemin."
+    },
+    {
+      "id": 6,
+      "name": "Eviteur d'obstacles",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/eviteur d'obstacles.png",
+      "role": "Navigation autonome",
+      "story": "Un robot qui utilise des capteurs à ultrasons pour détecter les obstacles et naviguer autour d'eux, évitant ainsi les collisions."
+    },
+    {
+      "id": 7,
+      "name": "Parking Intelligent",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/parking intelligent.png",
+      "role": "Automatisation et IoT",
+      "story": "Un système de parking intelligent qui utilise des capteurs pour détecter les places disponibles et guider les véhicules vers elles."
+    },
+    {
+      "id": 8,
+      "name": "Mini Station DHT11",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/mini station dht11.png",
+      "role": "Surveillance environnementale",
+      "story": "Une station de surveillance environnementale miniature utilisant le capteur DHT11 pour mesurer la température et l'humidité, avec un affichage LCD pour visualiser les données."
     }
   ],
   "techStack": [
@@ -359,7 +387,7 @@
           "description": "Le Wi-Fi et le Bluetooth intégrés en font un excellent choix pour les projets IoT et les robots connectés.",
           "price": "35DT"
         }
-     ]
+      ]
     },
     {
       "category": "Capteurs",
@@ -409,26 +437,26 @@
     }
   ],
 
-"join" :{ 
-  "whyJoin": [
-    "Expérience pratique avec des technologies de pointe",
-    "Environnement collaboratif de résolution de problèmes",
-    "Encadrement par des professionnels de l'industrie",
-    "Accès à des équipements et installations de dernière génération"
-  ],
-  "whatYouLearn": [
-    "Conception et construction de robots",
-    "Programmation et systèmes de contrôle",
-    "Bases de l'électronique et des circuits",
-    "Méthodologie de résolution de problèmes",
-    "Compétences en gestion de projet"
-  ],
-  "welcomeMessage": "Nous accueillons les esprits curieux et les bricoleurs créatifs !",
-  "ctaButton": {
-    "text": "Exprimer mon intérêt",
-    "link": "#contact"
-  }
-},
+  "join": {
+    "whyJoin": [
+      "Expérience pratique avec des technologies de pointe",
+      "Environnement collaboratif de résolution de problèmes",
+      "Encadrement par des professionnels de l'industrie",
+      "Accès à des équipements et installations de dernière génération"
+    ],
+    "whatYouLearn": [
+      "Conception et construction de robots",
+      "Programmation et systèmes de contrôle",
+      "Bases de l'électronique et des circuits",
+      "Méthodologie de résolution de problèmes",
+      "Compétences en gestion de projet"
+    ],
+    "welcomeMessage": "Nous accueillons les esprits curieux et les bricoleurs créatifs !",
+    "ctaButton": {
+      "text": "Exprimer mon intérêt",
+      "link": "#contact"
+    }
+  },
 
   "contact": {
     "email": "coretechlab.contact@gmail.com",
