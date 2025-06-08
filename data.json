@@ -8,7 +8,7 @@
 
   "navigation": [
     { "name": "Accueil", "link": "#hero" },
-    { "name": "À Propos", "link": "#about" },
+    { "name": "Notre Statégie", "link": "#strategy" },
     { "name": "Cours", "link": "#courses" },
     { "name": "Projets", "link": "#bots" },
     { "name": "Nos Produits", "link": "#products-section" },
