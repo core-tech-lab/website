@@ -559,7 +559,6 @@ function populateBots(bots) {
             <div class="bot-card">
                 <div class="bot-image-container">
                     <img src="${bot.image}" alt="${bot.name}">
-                    <div class="bot-nickname">${bot.nickname}</div>
                 </div>
                 <div class="card-body p-3">
                     <h5 class="card-title">${bot.name}</h5>
