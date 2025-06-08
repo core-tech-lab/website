@@ -347,68 +347,44 @@
       "items": [
         {
           "name": "Arduino Uno",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/arduino.jpg",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/ARDUINO_UNO.png",
           "description": "Parfait pour les débutants, ce microcontrôleur est la base de nombreux projets d'introduction.",
-          "price": "25€"
+          "price": "35DT"
         },
         {
-          "name": "Raspberry Pi 4",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/raspberry.webp",
-          "description": "Lorsqu'une puissance de calcul plus élevée est nécessaire, cet ordinateur monocarte permet des applications avancées de vision par ordinateur et d'IA.",
-          "price": "89€"
+          "name": "Raspberry Pi Pico",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/RASPBERRY_PICO.png",
+          "description": "Un microcontrôleur puissant et polyvalent pour des projets plus complexes.",
+          "price": "30DT"
         },
         {
           "name": "ESP32",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/esp32.jpg",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/ESP32.png",
           "description": "Le Wi-Fi et le Bluetooth intégrés en font un excellent choix pour les projets IoT et les robots connectés.",
-          "price": "35€"
-        },
-        {
-          "name": "Arduino Nano",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/arduino.jpg",
-          "description": "Version compacte de l'Arduino Uno, idéale pour les projets avec contraintes d'espace.",
-          "price": "18€"
-        },
-        {
-          "name": "Micro:bit",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/controllers/esp32.jpg",
-          "description": "Parfait pour l'apprentissage de la programmation et l'électronique pour les jeunes.",
-          "price": "22€"
+          "price": "35DT"
         }
-      ]
+     ]
     },
     {
       "category": "Capteurs",
       "items": [
         {
           "name": "Capteur de distance à ultrasons",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/ultrasonic.webp",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/SR04.png",
           "description": "Permet aux robots de détecter les obstacles et de mesurer les distances à l'aide d'ondes sonores.",
-          "price": "8€"
+          "price": "7DT"
         },
         {
-          "name": "Capteur de proximité infrarouge",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/infrared.jpg",
+          "name": "Capteur infrarouge",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/FC-51.png",
           "description": "Idéal pour le suivi de ligne et la détection d'objets à courte distance.",
-          "price": "5€"
+          "price": "7DT"
         },
         {
-          "name": "Module caméra",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/camera.jpg",
-          "description": "Ajoute des capacités de perception visuelle pour la navigation avancée et la reconnaissance d'objets.",
-          "price": "45€"
-        },
-        {
-          "name": "Capteur de température DHT22",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/infrared.jpg",
-          "description": "Mesure précise de la température et de l'humidité pour les projets environnementaux.",
-          "price": "12€"
-        },
-        {
-          "name": "Gyroscope MPU6050",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/ultrasonic.webp",
-          "description": "Capteur de mouvement 6 axes pour la stabilisation et la navigation robotique.",
-          "price": "7€"
+          "name": "Capteur de température DHT11",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/sensors/DHT11.png",
+          "description": "Mesure la température et l'humidité ambiante, utile pour les projets environnementaux.",
+          "price": "10DT"
         }
       ]
     },
@@ -416,34 +392,22 @@
       "category": "Actionneurs",
       "items": [
         {
-          "name": "Servomoteurs",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/servo.png",
-          "description": "Fournissent un contrôle de rotation précis pour les bras et articulations des robots.",
-          "price": "15€"
+          "name": "Servomoteurs SG90",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/SG90.png",
+          "description": "Petits et légers, parfaits pour les projets nécessitant un mouvement précis.",
+          "price": "10DT"
         },
         {
-          "name": "Moteurs à courant continu avec pilote L298N",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/dc-motor.png",
-          "description": "Propulsent les roues de nos robots mobiles avec un contrôle de vitesse variable.",
-          "price": "12€"
+          "name": "Chassis de robot",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/CHASSIS_ROBOT_2WD.png",
+          "description": "Châssis robuste pour construire des robots mobiles à deux roues.",
+          "price": "20DT"
         },
         {
-          "name": "Moteurs pas à pas",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/stepper.webp",
-          "description": "Quand un positionnement précis est crucial, ces moteurs se déplacent par incréments définis.",
-          "price": "28€"
-        },
-        {
-          "name": "Moteur Brushless",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/dc-motor.png",
-          "description": "Moteur haute performance pour applications nécessitant vitesse et efficacité.",
-          "price": "55€"
-        },
-        {
-          "name": "Actionneur linéaire",
-          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/servo.png",
-          "description": "Mouvement linéaire précis pour mécanismes de levage et de positionnement.",
-          "price": "42€"
+          "name": "Fils de connexion",
+          "image": "https://core-tech-lab.github.io/website/assets/images/electronics/actuators/FILD_DE_CONNECTION.png",
+          "description": "Indispensables pour connecter les composants électroniques entre eux.",
+          "price": "10DT"
         }
       ]
     }
