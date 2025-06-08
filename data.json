@@ -310,16 +310,14 @@
   "bots": [
     {
       "id": 1,
-      "name": "Clanky",
-      "nickname": "The Pathfinder",
-      "image": "https://core-tech-lab.github.io/website/assets/images/bots/1.jpeg",
-      "role": "Maze Navigation Champion",
-      "story": "Built by our first-year students, Clanky has won three consecutive maze navigation competitions with its innovative sensor array and adaptive pathfinding algorithm."
+      "name": "Bras de robot",
+      "image": "https://core-tech-lab.github.io/website/assets/images/bots/bras de robot.png",
+      "role": "Robotique",
+      "story": "Un bras robotique conçu pour des tâches de précision, capable de soulever et de manipuler des objets avec une grande dextérité."
     },
     {
       "id": 2,
       "name": "Whizzy",
-      "nickname": "Speed Demon",
       "image": "https://core-tech-lab.github.io/website/assets/images/bots/2.jpeg",
       "role": "Line Following Specialist",
       "story": "Holding the lab record for the fastest line-following course completion, Whizzy demonstrates the perfect balance of speed and precision control."
@@ -327,7 +325,6 @@
     {
       "id": 3,
       "name": "Grabby",
-      "nickname": "The Collector",
       "image": "https://core-tech-lab.github.io/website/assets/images/bots/3.jpeg",
       "role": "Object Retrieval Expert",
       "story": "With its articulated arm and sensitive pressure sensors, Grabby can pick up objects of various shapes and sizes with remarkable precision."
@@ -335,7 +332,6 @@
     {
       "id": 4,
       "name": "Scout",
-      "nickname": "The Explorer",
       "image": "https://core-tech-lab.github.io/website/assets/images/bots/4.jpeg",
       "role": "Terrain Navigator",
       "story": "Designed for outdoor environments, Scout can traverse rough terrain and map its surroundings using a combination of LiDAR and computer vision."
