@@ -63,7 +63,7 @@
       "title": "Introduction à la Robotique",
       "description": "Parfait pour les débutants, ce cours couvre les fondamentaux de la conception de robots, l'électronique de base et les concepts de programmation simples.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/1.jpeg",
-      "duration": "8 semaines",
+      "duration": "4 semaines",
       "level": "Débutant",
       "tags": ["Pratique", "Arduino", "Hebdomadaire"],
       "detailedDescription": "Cet atelier d'introduction complet est conçu pour donner aux débutants complets une base solide en robotique. Vous commencerez par apprendre les principes fondamentaux de la conception et de la construction de robots, puis passerez aux concepts électroniques essentiels comme les circuits, les capteurs et les actionneurs. Enfin, vous apprendrez à programmer votre robot en utilisant Arduino, vous donnant les compétences pour créer votre propre robot autonome à la fin du cours.",
@@ -136,10 +136,11 @@
           "description": "Connecte les composants électroniques ensemble"
         }
       ],
-      "date": "15 juin - 3 août 2025 | Samedis 10h00 - 12h00",
-      "location": "Laboratoire d'Innovation, Bâtiment A",
-      "capacity": "15 participants",
+      "date": "Contacter Core Tech Lab",
+      "location": "Local Core Tech Lab",
+      "capacity": "4 à 6 participants",
       "registrationStatus": "open",
+      "formsLink": null,
       "nextSession": null
     },
     {
@@ -147,8 +148,8 @@
       "title": "Programmation Avancée de Robots",
       "description": "Amenez vos compétences en robotique au niveau supérieur avec des techniques de programmation avancées, des contrôleurs PID et l'intégration de capteurs complexes.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/2.jpeg",
-      "duration": "6 semaines",
-      "level": "Intermédiaire",
+      "duration": "8 semaines",
+      "level": "Avancé",
       "tags": ["Avancé", "Programmation", "Contrôle PID"],
       "detailedDescription": "Cet atelier avancé s'appuie sur les fondements des connaissances de base en robotique et amène les participants vers un territoire plus complexe. Vous apprendrez des techniques de programmation sophistiquées incluant les machines à états, les contrôleurs PID pour un mouvement précis, et comment intégrer plusieurs capteurs pour des comportements autonomes avancés. À la fin de cet atelier, vous serez capable de créer des robots qui peuvent naviguer dans des environnements complexes et effectuer des tâches précises.",
       "prerequisites": "Connaissances de base en programmation Arduino et robotique simple. Accomplissement de l'atelier Introduction à la Robotique ou expérience équivalente recommandée.",
@@ -215,19 +216,20 @@
           "description": "Pour une mesure précise de la rotation des roues"
         }
       ],
-      "date": "10 septembre - 15 octobre 2025 | Mercredis 18h00 - 20h30",
-      "location": "Laboratoire d'Ingénierie, Bâtiment B",
-      "capacity": "12 participants",
-      "registrationStatus": "coming_soon",
-      "nextSession": "Inscription ouvre le 15 juillet 2025"
+      "date": "Contacter Core Tech Lab",
+      "location": "Local Core Tech Lab",
+      "capacity": "4 à 6 participants",
+      "registrationStatus": "open",
+      "formsLink": null,
+      "nextSession": null
     },
     {
       "id": 3,
-      "title": "Impression 3D et Gravure CNC",
+      "title": "Impression 3D ou Gravure CNC",
       "description": "Explorez les technologies de fabrication numérique modernes avec l'impression 3D et la gravure CNC, de la conception à la réalisation.",
       "image": "https://core-tech-lab.github.io/website/assets/images/workshops/3.jpeg",
-      "duration": "10 semaines",
-      "level": "Avancé",
+      "duration": "Sur Demande",
+      "level": "Sur Demande",
       "tags": ["Impression 3D", "CNC", "Fabrication Numérique"],
       "detailedDescription": "Cet atelier avancé explore le monde fascinant de la fabrication numérique moderne. Les participants apprendront à maîtriser les technologies d'impression 3D et de gravure CNC, depuis la conception assistée par ordinateur jusqu'à la fabrication finale. Vous découvrirez les différents matériaux, les techniques de modélisation 3D, la programmation des machines CNC, et les applications pratiques dans l'industrie et le prototypage. L'atelier culmine avec la réalisation d'un projet personnel complet utilisant ces deux technologies.",
       "prerequisites": "Connaissances de base en informatique et en dessin technique. Une expérience préalable en CAO est utile mais non requise.",
@@ -300,11 +302,12 @@
           "description": "PLA, ABS, bois, acrylique, métaux pour différents projets"
         }
       ],
-      "date": "5 octobre - 14 décembre 2025 | Lundis & Jeudis 18h00 - 20h00",
-      "location": "Atelier de Fabrication Numérique, Campus Principal",
-      "capacity": "10 participants",
-      "registrationStatus": "closed",
-      "nextSession": "Printemps 2026 - Dates à confirmer"
+      "date": "Contacter Core Tech Lab",
+      "location": "Local Core Tech Lab",
+      "capacity": "Personnalisé selon les besoins",
+      "registrationStatus": "open",
+      "formsLink": null,
+      "nextSession": null
     }
   ],
   "bots": [

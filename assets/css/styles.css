@@ -555,6 +555,7 @@ h6 {
 }
 
 .nav-link {
+  color: var(--text-color) !important;
   font-weight: 500;
   margin: 0 0.5rem;
   position: relative;
@@ -1126,7 +1127,7 @@ h6 {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  z-index: 1000;
+  z-index: 1050;
   display: flex;
   align-items: center;
   justify-content: center;

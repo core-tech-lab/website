@@ -502,13 +502,16 @@ function openWorkshopDetails(courseId, courses) {
   }
 
   // Handle registration button click
-  const registerBtn = overlay.querySelector(".register-btn");
-  if (registerBtn) {
-    registerBtn.addEventListener("click", () => {
-      alert(`Registration process started for: ${course.title}`);
-      // You can replace this with your actual registration logic
-    });
-  }
+const registerBtn = overlay.querySelector(".register-btn");
+if (registerBtn) {
+  registerBtn.addEventListener("click", () => {
+    if (course.formsLink) {
+      window.open(course.formsLink, "_blank"); // Opens the link in a new tab
+    } else {
+      alert("Registration link is not available.");
+    }
+  });
+}
 }
 
 // Function to close the workshop details
@@ -859,18 +862,19 @@ function populateContactSection(contactData) {
   document.getElementById("contact-address").textContent = contactData.address;
 
   // Social media icons
-  const socialIcons = document.getElementById("social-icons");
-  socialIcons.innerHTML = "";
 
-  contactData.socialMedia.forEach((social) => {
-    const a = document.createElement("a");
-    a.href = social.link;
-    a.className = "social-icon";
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.innerHTML = `<i class="bi ${social.icon}"></i>`;
-    socialIcons.appendChild(a);
-  });
+  // const socialIcons = document.getElementById("social-icons");
+  // socialIcons.innerHTML = "";
+
+  // contactData.socialMedia.forEach((social) => {
+  //   const a = document.createElement("a");
+  //   a.href = social.link;
+  //   a.className = "social-icon";
+  //   a.target = "_blank";
+  //   a.rel = "noopener noreferrer";
+  //   a.innerHTML = `<i class="bi ${social.icon}"></i>`;
+  //   socialIcons.appendChild(a);
+  // });
 }
 
 // Initialize Bootstrap components
