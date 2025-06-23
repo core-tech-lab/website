@@ -86,7 +86,7 @@ function populateSiteContent(data) {
   populateBots(data.bots);
 
   // Tech Stack section
-  const display = createProductRotationDisplay(data.techStack); 
+  const productDisplay = createProductGridDisplay(data.techStack);
 
 
   // Join section
@@ -578,20 +578,15 @@ function populateBots(bots) {
 // Populate tech stack section
 
 /**
- * Creates an interactive rotating product display
+ * Creates a simple grid product display
  * @param {Array} techStack - Array of product categories with items
  * @param {Object} options - Configuration options
  */
-function createProductRotationDisplay(techStack, options = {}) {
+function createProductGridDisplay(techStack, options = {}) {
     // Default configuration
     const config = {
-        containerId: 'wheel-container',
+        containerId: 'products-grid',
         controlsId: 'category-controls',
-        centerLogoId: 'center-logo',
-        categoryNameId: 'category-name',
-        rotationSpeed: 0.4,
-        rotationInterval: 40,
-        radius: 350,
         categoryIcons: {
             'Contrôleurs': '🔧',
             'Capteurs': '📡',
@@ -608,20 +603,15 @@ function createProductRotationDisplay(techStack, options = {}) {
 
     // State variables
     let currentCategory = Object.keys(productData)[0] || "Contrôleurs";
-    let rotationAngle = 0;
-    let isRotating = true;
-    let rotationInterval;
 
     /**
      * Initialize the product display
      */
     function initialize() {
         populateCategories();
-        populateWheel(currentCategory);
+        populateGrid(currentCategory);
         return {
             selectCategory,
-            startRotation,
-            stopRotation,
             getCurrentCategory: () => currentCategory,
             destroy
         };
@@ -663,33 +653,17 @@ function createProductRotationDisplay(techStack, options = {}) {
         // Update current category
         currentCategory = category;
         
-        // Update center info with appropriate icon
-        const centerLogo = document.getElementById(config.centerLogoId);
-        const categoryName = document.getElementById(config.categoryNameId);
-        
-        if (centerLogo) {
-            const iconElement = centerLogo.querySelector('.center-logo-icon');
-            if (iconElement) {
-                iconElement.textContent = config.categoryIcons[category] || '🔧';
-            }
-        }
-        
-        if (categoryName) {
-            categoryName.textContent = category;
-        }
-        
-        // Stop current rotation and populate wheel with new products
-        stopRotation();
-        populateWheel(category);
+        // Populate grid with new products
+        populateGrid(category);
     }
 
     /**
-     * Populate the rotating wheel with products
+     * Populate the grid with products
      * @param {string} category - Category name
      */
-    function populateWheel(category) {
-        const wheelContainer = document.getElementById(config.containerId);
-        if (!wheelContainer) {
+    function populateGrid(category) {
+        const gridContainer = document.getElementById(config.containerId);
+        if (!gridContainer) {
             console.error(`Container with id '${config.containerId}' not found`);
             return;
         }
@@ -697,37 +671,18 @@ function createProductRotationDisplay(techStack, options = {}) {
         const products = productData[category] || [];
         
         // Clear existing products
-        wheelContainer.innerHTML = '';
+        gridContainer.innerHTML = '';
         
         if (products.length === 0) {
             console.warn(`No products found for category: ${category}`);
             return;
         }
         
-        // Calculate positions for circular arrangement on Y-axis
-        const angleStep = 360 / products.length;
-        
+        // Create products grid
         products.forEach((product, index) => {
-            const angle = (index * angleStep) * (Math.PI / 180);
-            const z = Math.cos(angle) * config.radius;
-            const x = Math.sin(angle) * config.radius;
-            
             const productCard = createProductCard(product, index);
-            productCard.style.transform = `translate3d(${x}px, 0, ${z}px)`;
-            productCard.style.left = '50%';
-            productCard.style.top = '50%';
-            productCard.style.marginLeft = '-140px';
-            productCard.style.marginTop = '-175px';
-            
-            // Add hover event listeners to stop/start rotation
-            productCard.addEventListener('mouseenter', stopRotation);
-            productCard.addEventListener('mouseleave', startRotation);
-            
-            wheelContainer.appendChild(productCard);
+            gridContainer.appendChild(productCard);
         });
-        
-        // Start rotation animation
-        startRotation();
     }
 
     /**
@@ -756,71 +711,23 @@ function createProductRotationDisplay(techStack, options = {}) {
     }
 
     /**
-     * Start the rotation animation
-     */
-    function startRotation() {
-        if (rotationInterval) {
-            clearInterval(rotationInterval);
-        }
-        
-        isRotating = true;
-        const wheelContainer = document.getElementById(config.containerId);
-        if (!wheelContainer) return;
-        
-        rotationInterval = setInterval(() => {
-            if (isRotating) {
-                rotationAngle += config.rotationSpeed;
-                wheelContainer.style.transform = `rotateY(${rotationAngle}deg)`;
-                
-                // Counter-rotate product cards to keep text upright
-                const productCards = wheelContainer.querySelectorAll('.product-card');
-                productCards.forEach(card => {
-                    const currentTransform = card.style.transform;
-                    const baseTransform = currentTransform.split(' rotateY')[0];
-                    card.style.transform = `${baseTransform} rotateY(${-rotationAngle}deg)`;
-                });
-            }
-        }, config.rotationInterval);
-    }
-
-    /**
-     * Stop the rotation animation
-     */
-    function stopRotation() {
-        isRotating = false;
-    }
-
-    /**
      * Clean up and destroy the display
      */
     function destroy() {
-        if (rotationInterval) {
-            clearInterval(rotationInterval);
-        }
-        
         const controlsContainer = document.getElementById(config.controlsId);
-        const wheelContainer = document.getElementById(config.containerId);
+        const gridContainer = document.getElementById(config.containerId);
         
         if (controlsContainer) {
             controlsContainer.innerHTML = '';
         }
         
-        if (wheelContainer) {
-            wheelContainer.innerHTML = '';
+        if (gridContainer) {
+            gridContainer.innerHTML = '';
         }
     }
 
     // Return the initialize function to start the display
     return initialize();
-}
-
-/**
- * Global function to handle product purchases
- * @param {string} productName - Name of the product
- */
-function buyProduct(productName) {
-    alert(`Vous avez sélectionné: ${productName}\nRedirection vers la page d'achat...`);
-    // Here you would typically redirect to a purchase page or open a modal
 }
 
 
