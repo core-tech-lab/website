@@ -47,7 +47,8 @@
             <h1 class="display-2 fw-bold text-white mb-3" data-aos="fade-up" id="hero-tagline"></h1>
             <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200" id="mission-statement"></p>
             <div data-aos="fade-up" data-aos-delay="400">
-                <a href="#join" class="btn btn-primary btn-lg glow-button" id="hero-cta" title="Learn more about our lab" role="button" aria-label="Learn more about our lab">
+                <a href="#join" class="btn btn-primary btn-lg glow-button" id="hero-cta"
+                    title="Learn more about our lab" role="button" aria-label="Learn more about our lab">
                     <span id="hero-cta-text"></span>
                 </a>
             </div>
@@ -206,20 +207,22 @@
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="glass-card p-4">
                         <h3 class="mb-4">Envoyer Un Message</h3>
-                        <form id="contact-form">
+                        <form action="mailto:coretechlab.contact@gmail.com" method="POST" enctype="text/plain">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Ton Nom" required>
+                                <input type="text" class="form-control" name="Nom" placeholder="Ton Nom" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Ton Email" required>
+                                <input type="email" class="form-control" name="Email" placeholder="Ton Email" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Ton Message" required></textarea>
+                                <textarea class="form-control" name="Message" rows="4" placeholder="Ton Message"
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Envoyer Message</button>
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
